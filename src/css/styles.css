@@ -21,14 +21,109 @@ a{
     margin:50px 0 0 40px;
 }
 
-.tasks-list li a:hover{
+
+.tasks-list li a:hover,
+.goBack-btn:hover{
     
     color: blue;
     transform: translateX(10px);
     transition: all 0.5s ease;
 }
 
+.task-wrapper{
+    margin-top: 50px;
+}
+
 .tasks-list li a{
     display: inline-block;
     transition: all 0.5s ease;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.timer {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.value {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.label {
+    font-size: 1rem;
+}
+
+.form {
+    max-width: 400px;
+    margin: 50px auto;
+    font-family: Arial, sans-serif;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+label input[type="radio"] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #666;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #333;
 }
